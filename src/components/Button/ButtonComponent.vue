@@ -29,7 +29,7 @@ export default {
 
 <style scoped>
 .v-btn {
-  color: white;
+  color: white !important;
   background-color: darkcyan !important;
 }
 </style>

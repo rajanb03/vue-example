@@ -1,10 +1,7 @@
 <template>
   <div>
-    <!-- <button :type="type" v-bind="$attrs">
-      {{ text }}
-    </button> -->
-    <v-btn elevation="2">
-      {{ text }}
+    <v-btn @click="$emit('clickButton')">
+      {{text}}
     </v-btn>
   </div>
 </template>
@@ -16,7 +13,7 @@ export default {
     text: {
       type: String,
       required: true,
-      default: ''
+      default: 'Button'
     },
     type: {
       type: String,

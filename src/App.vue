@@ -1,15 +1,22 @@
 <template>
   <div id="app">
-    <ButtonComponent text="TEST" type="button" />
+    <!-- <router-view></router-view> -->
+    <ButtonComponent @clickButton="clickButton" />
   </div>
 </template>
 
 <script>
-import  ButtonComponent from "./components/Button/ButtonComponent.vue";
+import ButtonComponent from "../src/components/Button/ButtonComponent.vue";
 export default {
   name: 'App',
   components: {
     ButtonComponent
+  },
+
+  methods: {
+    clickButton () {
+      alert('Clicked from child component');
+    }
   }
 }
 </script>

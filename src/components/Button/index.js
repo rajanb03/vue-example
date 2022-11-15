@@ -1,6 +1,4 @@
-import Vue from 'vue';
-
-import Button from './Button.vue';
+import Button from './ButtonComponent.vue';
 
 export default {
     install (Vue) {
